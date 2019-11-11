@@ -5,17 +5,25 @@
 	<title>Convert Money</title>
 	<link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
 </head>
+
+
 <body class='container'>
 
 <label>Enter your amount in Euro </label>
-<input type="text">
+
+
+<form action='' method='post'>
+	<input type="number" required>
 	<select>
 		<option value="1">USD</option>
 		<option value="2">CHF</option>
 	</select>
-<form action='' method='post'>
+	<br>
 	<button type='submit' class='btn btn-primary'>Convert</button>
 </form>
-<input type="text">
+<input type="text" readonly>
+<form action='/Operations' method='post'>
+	<button type='submit' class='btn btn-primary'>Display all operations</button>
+</form>
 </body>
 </html>
