@@ -9,9 +9,7 @@ class OperationsController < Sinatra::Base
     set :public_dir, "public"
   end
 
-  get '/Operations' do
-    "hello"
-  end
+
 
 
 end
