@@ -15,16 +15,19 @@ class ApplicationController < Sinatra::Base
   	end
 
   	get '/' do
-			@amount=20
+
 			@name = 'maryem'
-			puts '20'
 			mclb = Money::Bank::CurrencylayerBank.new
 			mclb.access_key = 'f06206a6038d9c8eaed8cf8aa3d05de9'
 			mclb.ttl_in_seconds = 86400
-			mclb.secure_connection = true
-			Money.default_bank = mclb
-			money = Money.new(1_00, "USD")
-			Money.new(1000, 'USD').exchange_to('EUR').format
+			mclb.secure_connection = false
+			Money.default_currency = Money::Currency.new("EUR")
+
+			curr1 = Money.from_amount(2, "USD").amount.to_f
+
+			puts 'second amount'
+			puts curr1
+			puts mclb.source_url
 			erb :index
   	end
 end
