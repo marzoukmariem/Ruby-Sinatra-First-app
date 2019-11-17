@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d6e323a-a9c4-4261-aaeb-4a90d3872729" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/OperationsController.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/currency-data-junior-master.iml" afterPath="$PROJECT_DIR$/.idea/currency-data-junior-master.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/error.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/nooperation.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/asset/CHF.jpg" afterPath="$PROJECT_DIR$/assets/CHF.svg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/asset/USD.png" afterPath="$PROJECT_DIR$/assets/USD.svg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/asset/euro.png" afterPath="$PROJECT_DIR$/assets/euro.svg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ApplicationController.rb" afterPath="$PROJECT_DIR$/app/controllers/ApplicationController.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.erb" afterPath="$PROJECT_DIR$/app/views/index.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/opertions.erb" afterPath="$PROJECT_DIR$/app/views/opertions.erb" />
@@ -71,12 +72,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationController.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ApplicationController.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/ApplicationController.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="48" column="115" selection-start-line="48" selection-start-column="115" selection-end-line="48" selection-end-column="115" />
+            <state relative-caret-position="177">
+              <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nooperation.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/nooperation.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/error.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="7" />
+              <folding>
+                <marker date="1574013110299" expanded="true" signature="21:165" ph="..." />
+                <marker date="1574013110299" expanded="true" signature="28:97" ph="..." />
+                <marker date="1574013110299" expanded="true" signature="124:157" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/index.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="50" column="86" selection-start-line="50" selection-start-column="86" selection-end-line="50" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -104,8 +129,8 @@
       <file leaf-file-name="opertions.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/opertions.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="210">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -128,9 +153,11 @@
         <option value="$PROJECT_DIR$/app/models/model.rb" />
         <option value="$PROJECT_DIR$/app/models/Convertion.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/index.erb" />
         <option value="$PROJECT_DIR$/app/views/opertions.erb" />
+        <option value="$PROJECT_DIR$/app/views/error.erb" />
+        <option value="$PROJECT_DIR$/app/views/nooperation.erb" />
         <option value="$PROJECT_DIR$/app/controllers/ApplicationController.rb" />
+        <option value="$PROJECT_DIR$/app/views/index.erb" />
       </list>
     </option>
   </component>
@@ -200,6 +227,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="currency-data-junior-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="currency-data-junior-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -486,12 +527,12 @@
       <workItem from="1573667532619" duration="8963000" />
       <workItem from="1573842150342" duration="15224000" />
       <workItem from="1573927203600" duration="27156000" />
-      <workItem from="1573987748104" duration="20224000" />
+      <workItem from="1573987748104" duration="25551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92022000" />
+    <option name="totallyTimeSpent" value="97349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -505,7 +546,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30482116" sideWeight="0.4971614" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2674961" sideWeight="0.4971614" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -790,26 +831,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/error.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <marker date="1574013110299" expanded="true" signature="21:165" ph="..." />
+            <marker date="1574013110299" expanded="true" signature="28:97" ph="..." />
+            <marker date="1574013110299" expanded="true" signature="124:157" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/nooperation.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/opertions.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="210">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ApplicationController.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="48" column="115" selection-start-line="48" selection-start-column="115" selection-end-line="48" selection-end-column="115" />
+        <state relative-caret-position="177">
+          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="50" column="86" selection-start-line="50" selection-start-column="86" selection-end-line="50" selection-end-column="86" />
           <folding />
         </state>
       </provider>

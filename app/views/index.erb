@@ -4,23 +4,58 @@
 	<meta charset='UTF-8' />
 	<title>Convert Money</title>
 	<link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
+	<style>
+
+		img {
+			width: 9%;
+			height: 5%;
+		}
+		input {
+			width: 17%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=number] {
+			width: 17%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+	</style>
 </head>
 
 
 <body class='container'>
 
-<label>Enter your amount </label>
 
 <form action='/add' method='post'>
-	<input  name="amount" min="0" value="<%= @convertion.amount %>"required>
-	<button type='submit' class='btn btn-primary'> >> </button>
+	<fieldset>
+		<legend>Convert your money:</legend>
+
+		<input  name="amount"  type="number" step="any" min="0" value="<%= @convertion.amount %>"required>
+		<img src="<%= url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/langfr-1024px-Flag_of_Europe.svg.png') %>" />
+
+		<button type='submit' class='btn btn-primary'> >> </button>
+
+
 	<input  name="result_usd" value="<%= @convertion.result_usd %>" readonly>
+		<img src="<%= url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/langfr-1280px-Flag_of_the_United_States.svg.png') %>" />
 	<input  name="result_chf" value="<%=  @convertion.result_chf %>" readonly>
+		<img src="<%= url('https://www.miniplanes.fr/images/products/386916/eur_a60458.png') %>" />
+	</fieldset>
 </form>
 <br>
 <br>
 <form action='/Operations' method='post'>
 	<button type='submit' class='btn btn-primary'>Display all operations</button>
 </form>
+
 </body>
 </html>

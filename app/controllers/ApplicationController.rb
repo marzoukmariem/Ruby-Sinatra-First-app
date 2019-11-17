@@ -23,6 +23,8 @@ class ApplicationController < Sinatra::Base
 
 # this method will  convert the amount enter  to USD end CHF using Currencylayer api and insert the values in the database
  		     post '/add' do
+					 begin
+
 				 bank = Money::Bank::CurrencylayerBank.new()
 				 bank.secure_connection = false
 				 bank.access_key = 'f06206a6038d9c8eaed8cf8aa3d05de9'
@@ -33,22 +35,33 @@ class ApplicationController < Sinatra::Base
 				 puts  response_obj
 				 rate1 = response_obj['quotes']['USDEUR']
 				 rate2 = response_obj['quotes']['USDCHF']
-				 Money.infinite_precision = true
+				 Money.infinite_precision = false
 				 Money.locale_backend = nil
 				 Money.add_rate("USD","EUR",rate1)
 				 Money.add_rate("EUR","USD",1/rate1)
 				 Money.add_rate("USD","CHF",rate2)
-				 Money.add_rate("CHF","USD",1/rate2)
-				 a = params[:amount]
-				 eur_usd = Money.new(a*100, "EUR").exchange_to("USD").to_f
-				 puts 'conversion eur_usd ='
-				 puts eur_usd
-				 puts 'conversion eur_chf ='
-				 usd_chf = Money.new(eur_usd*100, "USD").exchange_to("CHF").to_f
-				 puts usd_chf
-				 @convertion = Convertion.new(:amount => a,:result_usd => eur_usd.round(5),	:result_chf => usd_chf.round(5))
+				 puts '1 euro egale :'
+				 puts 1/rate1
+				 puts '$'
+				 puts '1 dollar egale :'
+				 puts 1/rate2
+				 puts 'chf'
+				 a = Float(params[:amount])
+				 #eur_usd = Money.new(a, "EUR").exchange_to("USD")
+				 # puts 'conversion eur_usd ='
+				 # puts eur_usd
+				 # puts 'conversion eur_chf ='
+				 # usd_chf = Money.new(eur_usd, "USD").exchange_to("CHF")
+				 # puts usd_chf
+				 eur_usd = a / rate1
+				 usd_chf= eur_usd * rate2
+				 @convertion = Convertion.new(:amount => a,:result_usd => eur_usd.round(4),	:result_chf => usd_chf.round(4))
 				 @convertion.save
 				 erb :index
+					 rescue
+						 erb :error
+
+					 end
 			end
 
 
@@ -65,8 +78,11 @@ class ApplicationController < Sinatra::Base
 	post '/Operations' do
 
 	@operations = Convertion.all
-	puts @operations
+if @operations.count == 0
+	erb :nooperation
+else
 	erb :opertions
+end
 	end
 
 
