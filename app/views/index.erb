@@ -9,14 +9,13 @@
 
 <body class='container'>
 
-<label>Enter your amount in Euro </label>
+<label>Enter your amount </label>
 
-
-<form action='' method='post'>
-	<input  name="amount" min="0" required>
+<form action='/new'class="new_convertion" id="new_convertion" method='post'>
+	<input  id="convertion_amount" name="convertion[amount]" min="0" required>
 	<button type='submit' class='btn btn-primary'> >> </button>
-	<input  name="usd" readonly>
-	<input  name="chf" readonly>
+	<input  id="convertion_result_usd" name="convertion[result_usd]" >
+	<input  id="convertion_result_chf" name="convertion[result_chf]" >
 </form>
 <br>
 <br>

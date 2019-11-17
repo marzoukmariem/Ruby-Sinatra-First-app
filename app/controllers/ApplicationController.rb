@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'data_mapper' # requires all the gems listed above
 require 'sinatra'
 require 'haml'
 require 'money'
@@ -7,6 +8,8 @@ require 'money/bank/currencylayer_bank'
 require 'money-rails'
 require 'json'
 require 'net/http'
+require './app/models/Convertion.rb'
+
 class ApplicationController < Sinatra::Base
 	# This configuration part will inform the app where to search for the views and from where it will serve the static files
 
@@ -41,6 +44,13 @@ class ApplicationController < Sinatra::Base
 			puts 'conversion eur_chf ='
 			usd_chf = Money.new(eur_usd*100, "USD").exchange_to("CHF").to_f
       puts usd_chf
+
+			#@convertion = Convertion.new(:amount => amount_eur,:result_usd => eur_usd,	:result_chf => usd_chf)
+			#	@convertion.save
 			erb :index
-  	end
+		end
+	get '/new' do
+		@convertion = Convertion.new
+		@convertion.save
+	end
 end
