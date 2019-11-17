@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d6e323a-a9c4-4261-aaeb-4a90d3872729" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/error.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/nooperation.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/asset/CHF.jpg" afterPath="$PROJECT_DIR$/assets/CHF.svg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/asset/USD.png" afterPath="$PROJECT_DIR$/assets/USD.svg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/asset/euro.png" afterPath="$PROJECT_DIR$/assets/euro.svg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ApplicationController.rb" afterPath="$PROJECT_DIR$/app/controllers/ApplicationController.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.erb" afterPath="$PROJECT_DIR$/app/views/index.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/opertions.erb" afterPath="$PROJECT_DIR$/app/views/opertions.erb" />
-    </list>
+    <list default="true" id="1d6e323a-a9c4-4261-aaeb-4a90d3872729" name="Default" comment="" />
     <ignored path="currency-data-junior-master.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -527,12 +517,12 @@
       <workItem from="1573667532619" duration="8963000" />
       <workItem from="1573842150342" duration="15224000" />
       <workItem from="1573927203600" duration="27156000" />
-      <workItem from="1573987748104" duration="25551000" />
+      <workItem from="1573987748104" duration="26956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97349000" />
+    <option name="totallyTimeSpent" value="98754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
