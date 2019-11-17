@@ -22,3 +22,7 @@ gem 'money', '~> 6.13', '>= 6.13.4'
 gem 'money-open-exchange-rates', '~> 1.3'
 
 gem 'money-rails', '~> 1.13', '>= 1.13.3'
+
+gem 'json', '~> 1.8', '>= 1.8.3'
+
+gem 'http', '~> 4.2'

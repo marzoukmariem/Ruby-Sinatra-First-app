@@ -13,15 +13,13 @@
 
 
 <form action='' method='post'>
-	<input type="number" name="amount" min="0" required>
-	<select>
-		<option value="1">USD</option>
-		<option value="2">CHF</option>
-	</select>
-	<br>
-	<button type='submit' class='btn btn-primary'>Convert</button>
+	<input  name="amount" min="0" required>
+	<button type='submit' class='btn btn-primary'> >> </button>
+	<input  name="usd" readonly>
+	<input  name="chf" readonly>
 </form>
-<input type="text" readonly>
+<br>
+<br>
 <form action='/Operations' method='post'>
 	<button type='submit' class='btn btn-primary'>Display all operations</button>
 </form>
