@@ -4,13 +4,45 @@
   <meta charset='UTF-8' />
   <title>All Opertions</title>
   <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #1E7FCB;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #1E7FCB;
+    }
+  </style>
 </head>
 
 
 <body class='container'>
 
-<label>operation </label>
+<h2>All Opertions </h2>
+<table>
+  <tr>
+    <th>FROM EUR TO</th>
+    <th>USD</th>
+    <th>CHF</th>
+  </tr>
+<% @operations.each do |operation| %>
 
+      <tr>
+        <td><%= operation.amount %></td>
+        <td><%= operation.result_usd %></td>
+        <td><%= operation.result_chf %></td>
+      </tr>
 
+<% end%>
+
+</table>
 </body>
 </html>

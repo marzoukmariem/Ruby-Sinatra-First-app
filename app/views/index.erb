@@ -11,11 +11,11 @@
 
 <label>Enter your amount </label>
 
-<form action='/new'class="new_convertion" id="new_convertion" method='post'>
-	<input  id="convertion_amount" name="convertion[amount]" min="0" required>
+<form action='/add' method='post'>
+	<input  name="amount" min="0" value="<%= @convertion.amount %>"required>
 	<button type='submit' class='btn btn-primary'> >> </button>
-	<input  id="convertion_result_usd" name="convertion[result_usd]" >
-	<input  id="convertion_result_chf" name="convertion[result_chf]" >
+	<input  name="result_usd" value="<%= @convertion.result_usd %>" readonly>
+	<input  name="result_chf" value="<%=  @convertion.result_chf %>" readonly>
 </form>
 <br>
 <br>

@@ -26,3 +26,7 @@ gem 'money-rails', '~> 1.13', '>= 1.13.3'
 gem 'json', '~> 1.8', '>= 1.8.3'
 
 gem 'http', '~> 4.2'
+
+gem 'simple_form', '~> 3.5'
+
+gem 'form', '~> 0.0.0'
