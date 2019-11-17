@@ -161,9 +161,9 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.0)
-    simple_form (3.5.1)
-      actionpack (> 4, < 5.2)
-      activemodel (> 4, < 5.2)
+    simple_form (5.0.0)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     sinatra (2.0.7)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -199,7 +199,7 @@ DEPENDENCIES
   rack-test (~> 1.1)
   require_all (~> 3.0)
   rspec (~> 3.9)
-  simple_form (~> 3.5)
+  simple_form (~> 5.0)
   sinatra (~> 2.0)
 
 BUNDLED WITH

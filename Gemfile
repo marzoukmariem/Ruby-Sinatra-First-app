@@ -27,6 +27,6 @@ gem 'json', '~> 1.8', '>= 1.8.3'
 
 gem 'http', '~> 4.2'
 
-gem 'simple_form', '~> 3.5'
+gem 'simple_form', '~> 5.0'
 
 gem 'form', '~> 0.0.0'
